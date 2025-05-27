@@ -38,19 +38,19 @@ Thay thế `api.telegram.org` bằng URL của worker trong các API calls của
 
 URL Telegram API gốc:
 ```
-https://api.telegram.org/bot{TOKEN_BOT_CỦA_BẠN}/sendMessage
+https://api.telegram.org/bot{YOUR_TOKEN_BOT}/sendMessage
 ```
 
 Sử dụng proxy này:
 ```
-https://{URL_WORKER_CỦA_BẠN}/bot{TOKEN_BOT_CỦA_BẠN}/sendMessage
+https://{YOUR_URL_WORKER}/bot{YOUR_TOKEN_BOT}/sendMessage
 ```
 
 ### Ví dụ Code
 
 ```javascript
 // Ví dụ curl
-curl --location 'https://{URL_WORKER_CỦA_BẠN}/bot{TOKEN_BOT_CỦA_BẠN}/sendMessage' \
+curl --location 'https://{YOUR_URL_WORKER}/bot{YOUR_TOKEN_BOT}/sendMessage' \
 --header 'Content-Type: application/json' \
 --data '{
     "chat_id": "xxxx",
@@ -72,5 +72,5 @@ curl --location 'https://{URL_WORKER_CỦA_BẠN}/bot{TOKEN_BOT_CỦA_BẠN}/sen
 
 Truy cập tài liệu tích hợp bằng cách truy cập URL gốc của worker:
 ```
-https://{URL_WORKER}/
+https://{YOUR_URL_WORKER}/
 ```
